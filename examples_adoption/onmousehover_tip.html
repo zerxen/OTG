@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v2.min.js?2.9.3"></script>
+<script type='text/javascript' src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"> </script>
+<style>
+
+.node {
+stroke: #000;
+stroke-opacity: .6;
+stroke-width: 1.5px;
+}
+.link {
+stroke: #999;
+stroke-opacity: .6;
+}
+
+h3 {
+color: #ffffff;
+text-align:center;  
+font-style: italic;
+font-size: 14px;
+font-family: "Helvetica";
+}
+
+.node text {
+stroke: #fff !important;
+color: #ffffff !important;
+font-family: helvetica;
+font-size: 15px;
+fill: #ffffff;
+stroke-width:0px !important;
+}
+
+.d3-tip {
+line-height: 1;
+color: #ff00ff;
+}
+</style>
+<header>
+<script type="text/javascript" src="http://labratrevenge.com/d3-              tip/javascripts/d3.tip.v0.6.3.js"> </script>
+</header>
+<body>
+<script type="application/json" id="mis">
+{
+    "nodes": [{
+        "name": "Go.To.Market",
+            "group": 1
+    }, {
+        "name": "Data.Science",
+            "group": 1
+    }, {
+        "name": "Digital.Excellence",
+            "group": 1
+    }, {
+        "name": "Customer.Innovation",
+            "group": 1
+    }, {
+        "name": "XYZ",
+            "group": 1
+    }, {
+        "name": "Digital",
+            "group": 1
+    }, {
+        "name": "RES",
+            "group": 2
+    }, {
+        "name": "CV",
+            "group": 2
+    }, {
+        "name": "ECP",
+            "group": 2
+    }, {
+        "name": "MET",
+            "group": 2
+    }, {
+        "name": "ONC",
+            "group": 2
+    }, {
+        "name": "TAs",
+            "group": 2
+    }, {
+        "name": "IMM",
+            "group": 2
+    }, {
+        "name": "CNS",
+            "group": 2
+    }, {
+        "name": "BIO.SIM",
+            "group": 2
+    }, {
+        "name": "HealthCare.R&D.Medicine.MAPOR",
+            "group": 3
+    }, {
+        "name": "MAPOR",
+            "group": 3
+    }, {
+        "name": "CVG",
+            "group": 3
+    }, {
+        "name": "TMCP",
+            "group": 3
+    }, {
+        "name": "X.RAY",
+            "group": 3
+    }, {
+        "name": "DRA",
+            "group": 3
+    }, {
+        "name": "MED",
+            "group": 3
+    }, {
+        "name": "Legal&Patents",
+            "group": 3
+    }, {
+        "name": "GMIF",
+            "group": 3
+    }, {
+        "name": "OPU",
+            "group": 3
+    }, {
+        "name": "Region",
+            "group": 3
+    }, {
+        "name": "RBBI",
+            "group": 3
+    }, {
+        "name": "BIG",
+            "group": 3
+    }, {
+        "name": "BMHCI",
+            "group": 3
+    }],
+        "links": [{
+        "source": 0,
+            "target": 5,
+            "value": 1
+    }, {
+        "source": 1,
+            "target": 5,
+            "value": 1
+    }, {
+        "source": 2,
+            "target": 5,
+            "value": 1
+    }, {
+        "source": 3,
+            "target": 5,
+            "value": 1
+    }, {
+        "source": 4,
+            "target": 5,
+            "value": 1
+    }
+    , {
+        "source": 6,
+            "target": 11,
+            "value": 2
+    }
+    , {
+        "source": 7,
+            "target": 11,
+            "value": 2
+    }
+    , {
+        "source": 9,
+            "target": 11,
+            "value": 2
+    }
+    , {
+        "source": 10,
+            "target": 11,
+            "value": 2
+    }
+    , {
+        "source": 7,
+            "target": 8,
+            "value": 2
+    }
+    , {
+        "source": 9,
+            "target": 8,
+            "value": 2
+    }, {
+        "source": 12,
+            "target": 11,
+            "value": 2
+    }, {
+        "source": 13,
+            "target": 11,
+            "value": 2
+    }, {
+        "source": 14,
+            "target": 11,
+            "value": 2
+    }, {
+        "source": 16,
+            "target": 15,
+            "value": 3
+    }, {
+        "source": 17,
+            "target": 15,
+            "value": 3
+    }
+    , {
+        "source": 18,
+            "target": 15,
+            "value": 3
+    }, {
+        "source": 18,
+            "target": 19,
+            "value": 3
+    }
+    , {
+        "source": 21,
+            "target": 15,
+            "value": 3
+    }, {
+        "source": 21,
+            "target": 20,
+            "value": 3
+    }, {
+        "source": 22,
+            "target": 15,
+            "value": 3
+    },
+    {
+        "source": 23,
+            "target": 15,
+            "value": 3
+    }
+    ,
+    {
+        "source": 23,
+            "target": 24,
+            "value": 3
+    }
+    ,
+    {
+        "source": 23,
+            "target": 25,
+            "value": 3
+    },
+    {
+        "source": 26,
+            "target": 15,
+            "value": 3
+    }
+    ,
+    {
+        "source": 28,
+            "target": 15,
+            "value": 3
+    },
+    {
+        "source": 27,
+            "target": 15,
+            "value": 3
+    },
+    {
+        "source": 5,
+            "target": 11,
+            "value": 3
+    },
+    {
+        "source": 11,
+            "target": 15,
+            "value": 3
+    },
+    {
+        "source": 15,
+            "target": 5,
+            "value": 3
+    }
+
+    ]
+}
+</script>
+<script>
+//Constants for the SVG
+var width = 1500,
+height = 1500;
+//Set up the colour scale
+var color = d3.scale.category20();
+//Set up the force layout
+var force = d3.layout.force()
+.charge(-2000)
+.linkDistance(100)
+.size([width, height]);
+
+//Append a SVG to the body of the html page. Assign this SVG as an object to svg
+var svg = d3.select("body").append("svg")
+.attr("width", width)
+.attr("height", height);
+
+
+//Set up tooltip
+var tip = d3.tip()
+.attr('class', 'd3-tip')
+.offset([-10, 0])
+.html(function (d) {
+return  d.name + "";
+})
+svg.call(tip);
+//Read the data from the mis element 
+var mis = document.getElementById('mis').innerHTML;
+graph = JSON.parse(mis);
+
+//Creates the graph data structure out of the json data
+force.nodes(graph.nodes)
+.links(graph.links)
+.start();
+
+//Create all the line svgs but without locations yet
+var link = svg.selectAll(".link")
+.data(graph.links)
+.enter().append("line")
+.attr("class", "link")
+.style("stroke-width", function (d) {
+return Math.sqrt(d.value);
+});
+
+//Do the same with the circles for the nodes - no 
+var node = svg.selectAll(".node")
+.data(graph.nodes)
+.enter().append("g")
+.attr("class", "node")
+.call(force.drag);
+node.append("circle")
+.attr("r", 30)
+.style("fill", function (d) {
+return color(d.group);
+})
+.call(force.drag)
+.on('dblclick', connectedNodes)
+.on('mouseover', tip.show) //Added
+.on('mouseout', tip.hide); //Added 
+
+
+node.append("text")
+  .attr("text-anchor", "middle")
+  .attr("dy", 5)
+  .text(function(d) { return d.name })
+  .style("stroke", "gray");
+//Added code
+
+//Now we are giving the SVGs co-ordinates - the force layout is generating the co-ordinates which this code is using to update the attributes of the SVG elements
+force.on("tick", function () {
+link.attr("x1", function (d) {
+    return d.source.x;
+})
+    .attr("y1", function (d) {
+    return d.source.y;
+})
+    .attr("x2", function (d) {
+    return d.target.x;
+})
+    .attr("y2", function (d) {
+    return d.target.y;
+});
+d3.selectAll("circle").attr("cx", function (d) {
+    return d.x;
+})
+    .attr("cy", function (d) {
+    return d.y;
+});
+d3.selectAll("text").attr("x", function (d) {
+    return d.x;
+})
+    .attr("y", function (d) {
+    return d.y;
+});
+});
+
+//---Insert-------
+
+//Toggle stores whether the highlighting is on
+var toggle = 0;
+
+//Create an array logging what is connected to what
+var linkedByIndex = {};
+for (i = 0; i < graph.nodes.length; i++) {
+linkedByIndex[i + "," + i] = 1;
+};
+graph.links.forEach(function (d) {
+linkedByIndex[d.source.index + "," + d.target.index] = 1;
+});
+
+//This function looks up whether a pair are neighbours  
+function neighboring(a, b) {
+return linkedByIndex[a.index + "," + b.index];
+}
+
+function connectedNodes() {
+
+if (toggle == 0) {
+    //Reduce the opacity of all but the neighbouring nodes
+    d = d3.select(this).node().__data__;
+    node.style("opacity", function (o) {
+        return neighboring(d, o) | neighboring(o, d) ? 1 : 0.1;
+    });
+
+    link.style("opacity", function (o) {
+        return d.index==o.source.index | d.index==o.target.index ? 1 : 0.1;
+    });
+
+    //Reduce the op
+
+    toggle = 1;
+} else {
+    //Put them back to opacity=1
+    node.style("opacity", 1);
+    link.style("opacity", 1);
+    toggle = 0;
+}
+
+}
+
+//---End Insert---
+</script>   
+</body> 

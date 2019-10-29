@@ -1,0 +1,21 @@
+TODO:
+- Labels attached to the nodes that show the content of the deviceId element. This is not in my JS sample. Presently the deviceIds are shown as tooltips, but they shall be permanently visible, like in your sample code.
+
+==> I am achieving this by mixing with your orignal pure <circle> inside <a> with text likt this
+<a>
+  <circle></circle>
+  <text dx="" dy="">
+</a>
+and then asking the force simulation to not update cx/cy on movement, but "transform" attribute on the whole parent <a> and works fine.
+
+- Tooltip with context data, such as device name, make & model. Ideally in a nice HTML box.
+
+==> First dirty prototype provided, spent some time deciding
+
+- Structured layout that reflects the zones as in the zone element (Level 1, Level 2), in a vertcal layout where the lower levels are at the bottom. Note that there may also be Level 0, Level 3 and 4, and even Level 2.5.
+
+==> So far pre-created static levels on the provided JSON, I can create dynamic layers for "real" number types, can you confirm to me that if I cut away first 6 characters from the zone variable I will always have only the number? E.g. "Level 2.5" -> "2.5". Or more complex regular expression is needed?
+
+- The simulation/animation is totally non-essential. I view it as a nice gimmick to catch attention, but it doesn't add anything to the quality of the end result.
+
+==> So far using still the slightly modified force simulation as baseline created for me the best results when unknown number of nodes/links is expected. 
