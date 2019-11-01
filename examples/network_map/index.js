@@ -166,25 +166,17 @@ function onLoad(){
 				return 3*(height*0.7)/3
 			}
          }).strength(1)) // maximum strenght as we do not want other forces to be strong enough to kick node out of layers
-        .force("x", d3.forceX(function(d){
+        /*.force("x", d3.forceX(function(d){
 			if(d.hardware.type == "Printer"){
 				return (width*0.6)/3
 			} else {
 				return 2*(width*0.6)/3
 			}
          }).strength(0.1)) 
-         
-         /*
-         .force('x', d3.forceX().x(function(d) {
-            return xScale(d.value);
-          }))
-          .force('y', d3.forceY().y(function(d) {
-            return 0;
-          }))
           */         
          
         .force("center", d3.forceCenter(width / 2, height / 2))
-        .force("collision", d3.forceCollide().radius(50).strength(0.02)); // Radius is used for minimal distance between nodes to have space for text between them
+        .force("collision", d3.forceCollide().radius(23)); // Radius is used for minimal distance between nodes to have space for text between them
 
     d3.json("OT-BASE-sample.json", function(error, assetData) {
         if (error) throw error;
@@ -196,7 +188,7 @@ function onLoad(){
           .data(assetData.links)
           .enter()
           .append("line")
-          .attr("stroke-width", 1)
+          .attr("stroke-width", 0.5)
           .style("stroke", "red");
         
 

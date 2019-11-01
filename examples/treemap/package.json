@@ -1,0 +1,14 @@
+{
+  "name": "c56d35ce06c37510",
+  "main": "c56d35ce06c37510@110.js",
+  "version": "110.0.0",
+  "homepage": "https://observablehq.com/d/c56d35ce06c37510",
+  "author": {
+    "name": "zerxen",
+    "url": "https://observablehq.com/@zerxen"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
