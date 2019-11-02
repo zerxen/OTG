@@ -1,14 +1,436 @@
+<!-- Code from d3-graph-gallery.com -->
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Treemap</title>
-<link rel="stylesheet" type="text/css" href="./inspector.css">
-<body>
-<script type="module">
 
-import define from "./c56d35ce06c37510@110.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
 
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
 
+<div id="my_dataviz2"></div>
+
+<!-- Parked pop-up with display:none to be hidden until used-->
+<div id="popup" style="display:none">POP-UP PARKING</div>
+
+
+
+<script>
+
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    location.search
+        .substr(1)
+        .split("&")
+        .forEach(function (item) {
+          tmp = item.split("=");
+          if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+        });
+    return result;
+}
+
+// hides pop-up on click event
+function hidePopup(){
+    var popup = document.getElementById("popup");
+    popup.style.display = 'none';
+}        
+
+// Takes X,Y position of a node (from data model of force simulation)
+// extends it translation from drag/zoom on SVG
+// and checks in which quadrant of screen the node is so that the pop-up box 
+// is positioned always on the screen (e.g. avoids tooltips to be outside of screen
+// if nodes close to edges are clicked )
+function positionPopupOnPageXY( X, Y) {
+
+    var intVPW, intVPH;             // view port width / height
+
+    // distance from click point to view port top 
+    var intCoordX = X;    
+    var intCoordY = Y;    
+    //console.log("X/Y: " + intCoordX + "/" + intCoordY)
+    var intDistanceScrolledUp = document.body.scrollTop;
+        // distance the page has been scrolled up from view port top
+    var intPopupOffsetTop = intDistanceScrolledUp + intCoordY;
+        // add the two for total distance from click point y to top of page
+
+    var intDistanceScrolledLeft = document.body.scrollLeft;
+    var intPopupOffsetLeft = intDistanceScrolledLeft + intCoordX;
+
+    //VPWH = getViewPortWidthHeight();    // view port Width/Height
+    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    intVPW = w;
+    intVPH = h;
+    //console.log("canvas size W/H: " + w + "/" + h)
+    
+    var popup = document.getElementById("popup")
+    popup.style.position = 'absolute';
+    // if not display: block, .offsetWidth & .offsetHeight === 0
+    // popup.style.display = 'block';
+    popup.style.zIndex = '10100';
+    popup.style.backgroundColor = 'pink';
+
+    if ( intCoordX > intVPW/2 ) { intPopupOffsetLeft -= popup.offsetWidth; }
+        // if x is in the right half of the viewport, pull popup left by its width
+    if ( intCoordY > intVPH/2 ) { intPopupOffsetTop -= popup.offsetHeight; }
+        // if y is in the bottom half of view port, pull popup up by its height
+
+    popup.style.top = intPopupOffsetTop + 'px';
+    popup.style.left = intPopupOffsetLeft + 'px';  
+}   
+
+function on_enter_hover_popup(element){
+  //console.log("enter hover")
+  //console.log(element)
+  //document.getElementById(element.data.id + '_popup').style.display = 'block';
+
+  var popup = document.getElementById("popup");  // using pre-created div to avoid impacting SVG structure for now
+  popup.innerHTML = element.data.id 
+                    + "<br>Count:" 
+                    + element.data.count;
+                    //+ "<br>x:" + element.x0
+                    //+ "y:" + element.y0;
+  popup.style.display = "block" // changing from default none
+  positionPopupOnPageXY(element.x0 + (element.x1 - element.x0)/2 + 18,
+                        element.y0 + (element.y1 - element.y0)/2 + 18)
+            
+              
+}
+
+function on_exit_hover_popup(element){
+  //console.log("exit hover")
+  //console.log(element.data.id)
+  //document.getElementById(element.data.id + '_popup').style.display = 'none';
+  
+  // Common pop-up approach
+  var popup = document.getElementById("popup");
+  popup.style.display = 'none';  
+}
+
+// set the dimensions and margins of the graph
+var margin = {top: 10, right: 10, bottom: 10, left: 10},
+  width = window.innerWidth - margin.left - margin.right - 40,
+  height = window.innerHeight - margin.top - margin.bottom - 40;
+
+// Treemap rendering function, expects JSON in predefined D3 structure
+function treemap_render(data, targetdivID){
+
+  // append the svg object to the body of the page
+  var svg = d3.select(targetdivID)
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+  // Give the data to this cluster layout:
+  var root = d3.hierarchy(data).sum(function(d){ return d.count}) // Here the size of each leave is given in the 'value' field in input data
+
+  // Then d3.treemap computes the position of each element of the hierarchy
+  d3.treemap()
+    .size([width, height])
+    .paddingTop(28)
+    .paddingRight(7)
+    .paddingInner(3)      // Padding between each rectangle
+    //.paddingOuter(6)
+    //.padding(20)
+    (root)
+
+  // prepare a color scale
+  var color = d3.scaleOrdinal()
+    .domain(["CRITICAL", "HIGH", "MEDIUM","LOW"])
+    .range([ "#de0b0b", "#e38a0e", "#670ee3","#03ab38"])
+
+  // And a opacity scale
+  var opacity = d3.scaleLinear()
+    .domain([10, 30])
+    .range([.5,1])
+
+  // use this information to add rectangles:
+  svg
+    .selectAll("rect")
+    .data(root.leaves())
+    .enter()
+    .append("rect")
+      .attr('id', function (d) { return d.data.id; })
+      .attr('x', function (d) { return d.x0; })
+      .attr('y', function (d) { return d.y0; })
+      .attr('width', function (d) { return d.x1 - d.x0; })
+      .attr('height', function (d) { return d.y1 - d.y0; })
+      .on("mouseover", function(d){ 
+        on_enter_hover_popup(d) 
+      })
+      .on("mouseout", function(d){ on_exit_hover_popup(d) })
+      .style("stroke", "black")
+      .style("fill", function(d){ return color(d.parent.data.id)} )
+      .style("opacity", function(d){ return opacity( d.data.count / d.parent.data.largest_cell * 100 )}) // ratio of this cell against largest times 100 for percent
+
+  
+
+  // pop-up hiddens for onmouse-hover activation
+  /*
+  svg
+    .selectAll("text")
+    .data(root.leaves())
+    .enter()
+    .append("text")
+      .attr('id', function (d) { return d.data.id + '_popup'; })
+      .attr("x", function(d){ return d.x0+5})    // +10 to adjust position (more right)
+      .attr("y", function(d){ return d.y0-5})    // +20 to adjust position (lower)
+      .text(function(d){ return (d.data.id + " - " + d.data.count) })
+      .attr("font-size", function(d){
+        return "18px"
+      })
+      .attr("fill", "black")
+      .attr("style", "display:none")      
+  */
+
+  // and to add the text labels
+  svg
+    .selectAll("text")
+    .data(root.leaves())
+    .enter()
+    .append("text")
+      .attr("x", function(d){ return d.x0+5})    // +10 to adjust position (more right)
+      .attr("y", function(d){ return d.y0+20})    // +20 to adjust position (lower)
+      .text(function(d){ return d.data.id })
+      .attr("font-size", function(d){
+        var width = d.x1 - d.x0
+        var height= d.y1 - d.y0
+        if (width > 100 && height > 40){
+          return "15px"
+        }
+        return "0px"
+      })
+      .attr("fill", "white")
+
+  // and to add the text labels
+  svg
+    .selectAll("vals")
+    .data(root.leaves())
+    .enter()
+    .append("text")
+      .attr("x", function(d){ return d.x0+5})    // +10 to adjust position (more right)
+      .attr("y", function(d){ return d.y0+35})    // +20 to adjust position (lower)
+      .text(function(d){ return ("count: " + d.data.count)})
+      .attr("font-size", function(d){
+        var width = d.x1 - d.x0
+        var height= d.y1 - d.y0
+        if (width > 100 && height > 40){
+          return "9px"
+        }
+        return "0px"
+      })
+      .attr("fill", "white")
+
+  // Add title for the security criticality groups
+  svg
+    .selectAll("titles")
+    .data(root.descendants().filter(function(d){return d.depth==1}))
+    .enter()
+    .append("text")
+      .attr("x", function(d){ return d.x0})
+      .attr("y", function(d){ return d.y0+21})
+      .text(function(d){ return d.data.id })
+      .attr("font-size", "19px")
+      .attr("fill",  function(d){ return color(d.data.id)})
+
+  // Add title for the whole SVG
+  
+  svg
+    .append("text")
+      .attr("x", 0)
+      .attr("y", 14)    // +20 to adjust position (lower)
+      .text("Threemap of security vulnerabilities in assets monitored by OT BASE and organized by criticality")
+      .attr("font-size", "19px")
+      .attr("fill",  "grey" )
+  
+
+}
+
+// Accepts the array and key
+const groupBy = (array, key) => {
+  // Return the end result
+  return array.reduce((result, currentValue) => {
+    // If an array already present for key, push it to the array. Else create an array and push the object
+    (result[currentValue[key]] = result[currentValue[key]] || []).push(
+      currentValue
+    );
+    // Return the current iteration `result` value, this will be taken as next iteration `result` value and accumulate
+    return result;
+  }, {}); // empty object is the initial value for result object
+};
+
+function translate_otbase_json_to_d3_treemap_hierarchy(data){
+
+  // creation of final dictionary for Treemap
+  var result = {}
+  result['id'] = "Security Vulnerabilities";
+  result["children"] = [] // this will be level one separation based on priority  
+
+  // Group data by priorities
+  var priority_grouped_data = groupBy(data, 'priority');
+
+  // iterate over all the priorities located
+  for (const [key, value] of Object.entries(priority_grouped_data)) {
+    //console.log(key, value); 
+
+    var largest_cell = 0;
+    for (const [key2, value2] of Object.entries(value)){
+      value2['colname'] = "level2";
+      if (value2.count > largest_cell){
+        largest_cell = value2.count;
+      }
+    } 
+
+    // push key and all values to the dictionary
+    result["children"].push(
+      {
+        "children": value,
+        "colname": "level2",
+        "id": key,
+        "largest_cell": largest_cell
+      }
+    )
+
+  }
+  return result;
+
+}
+
+function manual_example_dict(){
+
+  var dict = {}
+
+  dict['id'] = "Security Vulnerabilities";
+  dict["children"] = [] // this will be level one separation based on priority
+
+  // Push level 2 treemap with CRITICAL 
+  dict["children"].push(
+    {
+      "children":[],
+      "colname": "level2",
+      "id": "CRITICAL"
+    }
+  )
+
+  // 0 index is CRITICAL
+  dict.children[0].children.push(
+    {
+      "colname": "level3",
+      "id": "BUG A",
+      "count": 10
+    }
+  )
+  dict.children[0].children.push(
+    {
+      "colname": "level3",
+      "id": "BUG B",
+      "count": 5
+    }
+  )
+
+  // Push level 2 treemap with HIGH 
+  dict["children"].push(
+    {
+      "children":[],
+      "colname": "level2",
+      "id": "HIGH"
+    }
+  )
+  // 0 index is HIGH
+  dict.children[1].children.push(
+    {
+      "colname": "level3",
+      "name": "BUG C",
+      "count": 1
+    }
+  )
+  dict.children[1].children.push(
+    {
+      "colname": "level3",
+      "id": "BUG D",
+      "count": 8
+    }
+  ) 
+
+  // Push level 2 treemap with MEDIUM 
+  dict["children"].push(
+    {
+      "children":[],
+      "colname": "level2",
+      "id": "MEDIUM"
+    }
+  )     
+  // 2 index is MEDIUM
+  dict.children[2].children.push(
+    {
+      "colname": "level3",
+      "id": "BUG A",
+      "count": 10
+    }
+  )
+  dict.children[2].children.push(
+    {
+      "colname": "level3",
+      "id": "BUG B",
+      "count": 5
+    }
+  )
+
+  // Push level 2 treemap with LOW 
+  dict["children"].push(
+    {
+      "children":[],
+      "colname": "level2",
+      "id": "LOW"
+    }
+  )
+  // 0 index is LOW
+  dict.children[3].children.push(
+    {
+      "colname": "level3",
+      "id": "BUG C",
+      "count": 12
+    }
+  )
+  dict.children[3].children.push(
+    {
+      "colname": "level3",
+      "id": "BUG D",
+      "count": 80
+    }
+  )  
+  
+  return dict;
+
+}
+
+
+// Practically main of the script to load json as needed
+file_to_load = findGetParameter('json')
+if (file_to_load == null){
+  file_to_load = "CVEdataNICE.json" 
+}
+console.log("file_to_load:" + file_to_load)
+console.log(file_to_load)
+console.log(JSON.stringify(manual_example_dict()))
+
+// read OT Base data
+d3.json(file_to_load, function(data){
+
+  //console.log(data)
+  corrected_data = translate_otbase_json_to_d3_treemap_hierarchy(data)
+  console.log("corrected_data JSON")
+  console.log(corrected_data)
+
+  //var corrected_data = manual_example_dict() 
+  //console.log("Manual JSON")
+  //console.log(corrected_data)
+
+  treemap_render(corrected_data,"#my_dataviz2")
+
+})
 </script>
