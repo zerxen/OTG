@@ -1,0 +1,67 @@
+[
+    {
+		"id": "CVE-2017-11781",
+		"priority": "HIGH",
+		"baseScore": 5.5,
+		"count": 956,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2017-11824",
+		"priority": "HIGH",
+		"baseScore": 8,
+		"count": 800,
+		"critical": 22
+	},
+	{
+		"id": "CVE-2017-8682",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 673,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2017-8689",
+		"priority": "HIGH",
+		"baseScore": 7,
+		"count": 673,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2017-8694",
+		"priority": "HIGH",
+		"baseScore": 7,
+		"count": 673,
+		"critical": 0
+	},
+	{	
+		"id": "CVE-2009-2493",
+		"priority": "HIGH",
+		"baseScore": 7.3,
+		"count": 450,
+		"critical": 0
+	},
+	{
+		
+		"id": "CVE-2015-2435",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 150,
+		"critical": 100
+	},
+	{
+		"id": "CVE-2015-2455",
+		"priority": "HIGH",
+		"baseScore": 4.3,
+		"count": 50,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2456",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 6,
+		"critical": 0
+	}
+]
+

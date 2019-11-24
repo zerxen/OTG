@@ -1,0 +1,102 @@
+[
+    {
+        "count": 924,
+        "id": "CVE-2019-1006",
+        "priority": "HIGH"
+    },
+    {
+        "count": 905,
+        "id": "CVE-2009-2493",
+        "priority": "HIGH"
+    },
+    {
+        "count": 94,
+        "id": "CVE-2015-2435",
+        "priority": "HIGH"
+    },
+    {
+        "count": 504,
+        "id": "CVE-2015-2455",
+        "priority": "HIGH"
+    },
+    {
+        "count": 204,
+        "id": "CVE-2015-2456",
+        "priority": "HIGH"
+    },
+    {
+        "count": 101,
+        "id": "CVE-2015-2462",
+        "priority": "HIGH"
+    },
+    {
+        "count": 1899,
+        "id": "CVE-2016-3209",
+        "priority": "MEDIUM"
+    },
+    {
+        "count": 792,
+        "id": "CVE-2017-8531",
+        "priority": "MEDIUM"
+    },
+    {
+        "count": 192,
+        "id": "CVE-2017-8532",
+        "priority": "MEDIUM"
+    },
+    {
+        "count": 192,
+        "id": "CVE-2017-8533",
+        "priority": "MEDIUM"
+    },
+    {
+        "count": 2786,
+        "id": "CVE-2017-8676",
+        "priority": "LOW"
+    },
+    {
+        "count": 386,
+        "id": "CVE-2017-8682",
+        "priority": "LOW"
+    },
+    {
+        "count": 185,
+        "id": "CVE-2019-1155",
+        "priority": "LOW"
+    },
+    {
+        "count": 784,
+        "id": "CVE-2017-11771",
+        "priority": "CRITICAL"
+    },
+    {
+        "count": 784,
+        "id": "CVE-2017-8543",
+        "priority": "CRITICAL"
+    },
+    {
+        "count": 184,
+        "id": "CVE-2017-8589",
+        "priority": "CRITICAL"
+    },
+    {
+        "count": 384,
+        "id": "CVE-2019-0626",
+        "priority": "CRITICAL"
+    },
+    {
+        "count": 84,
+        "id": "CVE-2019-0736",
+        "priority": "CRITICAL"
+    },
+    {
+        "count": 44,
+        "id": "CVE-2019-1181",
+        "priority": "CRITICAL"
+    },
+    {
+        "count": 5,
+        "id": "CVE-2019-1182",
+        "priority": "CRITICAL"
+    }
+]

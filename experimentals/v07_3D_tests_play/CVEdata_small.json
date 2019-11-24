@@ -1,0 +1,1095 @@
+[
+	{
+		"id": "CVE-2009-2493",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 907,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2435",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 906,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2455",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 906,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2456",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 906,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2462",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 903,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2013-3129",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 859,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2463",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 838,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2464",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 838,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1246",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 787,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1166",
+		"priority": "MEDIUM",
+		"baseScore": 4.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1244",
+		"priority": "MEDIUM",
+		"baseScore": 4.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1245",
+		"priority": "MEDIUM",
+		"baseScore": 4.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1252",
+		"priority": "MEDIUM",
+		"baseScore": 4.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1286",
+		"priority": "MEDIUM",
+		"baseScore": 4.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1318",
+		"priority": "MEDIUM",
+		"baseScore": 4.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1219",
+		"priority": "LOW",
+		"baseScore": 2.1,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1274",
+		"priority": "LOW",
+		"baseScore": 2.1,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1282",
+		"priority": "LOW",
+		"baseScore": 2.1,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1344",
+		"priority": "LOW",
+		"baseScore": 2.1,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-17612",
+		"priority": "HIGH",
+		"baseScore": 7.5,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1183",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1214",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1215",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1235",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1236",
+		"priority": "HIGH",
+		"baseScore": 7.6,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1240",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1241",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1242",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1243",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1247",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1248",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 29
+	},
+	{
+		"id": "CVE-2019-1249",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1250",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1256",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1268",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1271",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1280",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1285",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1291",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 54
+	},
+	{
+		"id": "CVE-2019-1315",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1319",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1326",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1333",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1339",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1341",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1342",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1346",
+		"priority": "HIGH",
+		"baseScore": 7.1,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1358",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1359",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 786,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0926",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 785,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0811",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0813",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0814",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0888",
+		"priority": "MEDIUM",
+		"baseScore": 5.6,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0894",
+		"priority": "MEDIUM",
+		"baseScore": 4.7,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0895",
+		"priority": "MEDIUM",
+		"baseScore": 4.7,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0896",
+		"priority": "MEDIUM",
+		"baseScore": 4.7,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0897",
+		"priority": "MEDIUM",
+		"baseScore": 4.7,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0898",
+		"priority": "MEDIUM",
+		"baseScore": 4.7,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0899",
+		"priority": "MEDIUM",
+		"baseScore": 4.7,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0900",
+		"priority": "MEDIUM",
+		"baseScore": 4.7,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0901",
+		"priority": "MEDIUM",
+		"baseScore": 4.7,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0878",
+		"priority": "LOW",
+		"baseScore": 3.1,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0816",
+		"priority": "HIGH",
+		"baseScore": 7,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0817",
+		"priority": "HIGH",
+		"baseScore": 7,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0868",
+		"priority": "HIGH",
+		"baseScore": 7,
+		"count": 772,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0883",
+		"priority": "HIGH",
+		"baseScore": 7.5,
+		"count": 771,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-6107",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 770,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0633",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 769,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2423",
+		"priority": "MEDIUM",
+		"baseScore": 4.3,
+		"count": 768,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2018-0968",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 761,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2453",
+		"priority": "MEDIUM",
+		"baseScore": 4.7,
+		"count": 758,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2472",
+		"priority": "MEDIUM",
+		"baseScore": 4.3,
+		"count": 725,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2511",
+		"priority": "MEDIUM",
+		"baseScore": 6.9,
+		"count": 710,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2516",
+		"priority": "MEDIUM",
+		"baseScore": 4.3,
+		"count": 695,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2517",
+		"priority": "MEDIUM",
+		"baseScore": 6.9,
+		"count": 688,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2518",
+		"priority": "MEDIUM",
+		"baseScore": 6.9,
+		"count": 680,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2546",
+		"priority": "MEDIUM",
+		"baseScore": 6.9,
+		"count": 670,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-6095",
+		"priority": "MEDIUM",
+		"baseScore": 4.9,
+		"count": 655,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-6100",
+		"priority": "MEDIUM",
+		"baseScore": 6.9,
+		"count": 650,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-6101",
+		"priority": "MEDIUM",
+		"baseScore": 6.9,
+		"count": 620,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2016-0049",
+		"priority": "MEDIUM",
+		"baseScore": 6.2,
+		"count": 610,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2016-0120",
+		"priority": "MEDIUM",
+		"baseScore": 6.5,
+		"count": 600,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2433",
+		"priority": "LOW",
+		"baseScore": 2.1,
+		"count": 570,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-2465",
+		"priority": "LOW",
+		"baseScore": 2.1,
+		"count": 550,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0805",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 520,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0836",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 500,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0838",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 500,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0842",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 490,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0846",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 480,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0847",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 476,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0851",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 475,
+		"critical": 78
+	},
+	{
+		"id": "CVE-2019-0853",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 470,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0856",
+		"priority": "HIGH",
+		"baseScore": 7.2,
+		"count": 465,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0859",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 465,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0877",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 461,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0879",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 460,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2017-0074",
+		"priority": "MEDIUM",
+		"baseScore": 5.4,
+		"count": 458,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0714",
+		"priority": "MEDIUM",
+		"baseScore": 6.2,
+		"count": 457,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0715",
+		"priority": "MEDIUM",
+		"baseScore": 6.2,
+		"count": 456,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0716",
+		"priority": "MEDIUM",
+		"baseScore": 4.9,
+		"count": 455,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1078",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 450,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1143",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 420,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1148",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 400,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1153",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 390,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1158",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 389,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0720",
+		"priority": "HIGH",
+		"baseScore": 8.4,
+		"count": 385,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1057",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 380,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1144",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 378,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1145",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 376,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1146",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 375,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1147",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 372,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1149",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 360,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1150",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 358,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1151",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 357,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1152",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 356,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1156",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 355,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1157",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 354,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1159",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 353,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1162",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 352,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1164",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 351,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1168",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 351,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1177",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 350,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1178",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 300,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1187",
+		"priority": "HIGH",
+		"baseScore": 7.5,
+		"count": 290,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0736",
+		"priority": "CRITICAL",
+		"baseScore": 9.8,
+		"count": 285,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1181",
+		"priority": "CRITICAL",
+		"baseScore": 9.8,
+		"count": 280,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1182",
+		"priority": "CRITICAL",
+		"baseScore": 9.8,
+		"count": 270,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1212",
+		"priority": "HIGH",
+		"baseScore": 7.5,
+		"count": 256,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1155",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 255,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2015-6108",
+		"priority": "HIGH",
+		"baseScore": 9.3,
+		"count": 251,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0713",
+		"priority": "MEDIUM",
+		"baseScore": 6.8,
+		"count": 250,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0948",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 210,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0972",
+		"priority": "MEDIUM",
+		"baseScore": 6.5,
+		"count": 209,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1010",
+		"priority": "MEDIUM",
+		"baseScore": 6.5,
+		"count": 205,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1012",
+		"priority": "MEDIUM",
+		"baseScore": 6.5,
+		"count": 202,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1039",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 201,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1040",
+		"priority": "MEDIUM",
+		"baseScore": 5.9,
+		"count": 200,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1043",
+		"priority": "MEDIUM",
+		"baseScore": 6.8,
+		"count": 195,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1046",
+		"priority": "MEDIUM",
+		"baseScore": 5.5,
+		"count": 190,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0722",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 180,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0888",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 170,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0904",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 160,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0905",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 155,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0906",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 150,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0907",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 121,
+		"critical": 65
+	},
+	{
+		"id": "CVE-2019-0908",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 120,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0909",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 108,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0941",
+		"priority": "HIGH",
+		"baseScore": 7.5,
+		"count": 105,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0973",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 95,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0974",
+		"priority": "HIGH",
+		"baseScore": 8.8,
+		"count": 80,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0984",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 72,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-0986",
+		"priority": "HIGH",
+		"baseScore": 7.1,
+		"count": 50,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1014",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 25,
+		"critical": 0
+	},
+	{
+		"id": "CVE-2019-1017",
+		"priority": "HIGH",
+		"baseScore": 7.8,
+		"count": 15,
+		"critical": 27
+	},
+	{
+		"id": "CVE-2019-1019",
+		"priority": "HIGH",
+		"baseScore": 8.5,
+		"count": 6,
+		"critical": 0
+	}
+]
+
