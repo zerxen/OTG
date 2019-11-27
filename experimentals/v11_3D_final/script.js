@@ -10,8 +10,8 @@ var zscaleSize = d3.scale.linear().range([0, 500]).domain([0, 1000]);
 var zscaleCost = d3.scale.linear().range([0, 500]).domain([0, 1000]);
 
 
-var zAxis = "count"
-var scaleDomainMax = 1000
+var zAxis = "critical"
+var scaleDomainMax = 100
 var scaleRange = 500
 
 var colorAttribute = "baseScore"
@@ -160,28 +160,6 @@ demo.Treemap3d = function () {
         _renderer.shadowMapSoft = true;
         _renderer.shadowMapType = THREE.PCFShadowMap;
         _renderer.shadowMapAutoUpdate = true;
-
-        ////////////////////////////////////////
-        /*
-        // create a canvas element
-        canvas1 = document.createElement('canvas');
-        context1 = canvas1.getContext('2d');
-        context1.font = "Bold 20px Arial";
-        context1.fillStyle = "rgba(0,0,0,0.95)";
-        context1.fillText('Hello, world!', 0, 20);        
-        
-        // canvas contents will be used for a texture
-        texture1 = new THREE.Texture(canvas1) 
-        texture1.needsUpdate = true;  
-
-        var spriteMaterial = new THREE.SpriteMaterial( { map: texture1, useScreenCoordinates: true } );
-        
-        sprite1 = new THREE.Sprite( spriteMaterial );
-        sprite1.scale.set(200,100,1.0);
-        sprite1.position.set( 50, 50, 0 );
-        _scene.add( sprite1 );	
-        */
-        //////////////////////////////////////////  
         
         function zScaleSelected(value){
             console.log("zScaleSelected:");
@@ -221,6 +199,7 @@ demo.Treemap3d = function () {
         controls = selection.append("div")
             .attr("class","controls")
 
+        /*
         controls.append("div").text("Select Z - Scale attribute: ");
         selector = controls.append("div").attr("class","select")
         zScaleSelect = selector.append("select")
@@ -252,81 +231,9 @@ demo.Treemap3d = function () {
             .text("critical")
             .attr("value","critical")           
         selector.append("div").attr("class","select_arrow");          
-           
+        */   
 
-        /*
-        _buttonBarDiv = selection.append("div")
-            .attr("class", "controls")
-            .text("Select Z-Scale attribute: ");
-          
-
-        _buttonBarDiv.append("button")
-            .text("ZScale: Count (default)")
-            .on("click", function () {
-                _zmetric = "count";
-                scaleDomainMax = 1000
-                transform();
-            });
-        _buttonBarDiv.append("button")
-            .text("ZScale: baseScore")
-            .on("click", function () {
-                _zmetric = "baseScore";
-                scaleDomainMax = 10
-                transform();
-            });
-
-        _buttonBarDiv.append("button")
-            .text("ZScale: critical")
-            .on("click", function () {
-                _zmetric = "critical";
-                scaleDomainMax = 100;
-                transform();
-            });
-
-        _buttonBarDiv2 = selection.append("div")
-            .attr("class", "controls")
-            .text("Select Color attribute: ");
-
-
-        _buttonBarDiv2.append("button")
-            .text("Color: baseScore (default)")
-            .on("click", function () {
-                colorAttribute = "baseScore";
-                colorScaleRange = 10
-                transform();
-            });
-
-        _buttonBarDiv2.append("button")
-            .text("Color: critical")
-            .on("click", function () {
-                colorAttribute = "critical";
-                colorScaleRange = 100;
-                transform();
-            });
-
-        _buttonBarDiv3 = selection.append("div")
-            .attr("class", "controls")
-            .text("Disable animations: ");
-
-
-        _buttonBarDiv3.append("button")
-            .text("Enable Animations (default)")
-            .on("click", function () {
-                animationDuration = 1000
-                transform();
-            });
-        _buttonBarDiv3.append("button")
-            .text("Disable Animations")
-            .on("click", function () {
-                animationDuration = 0
-                transform();
-            });
-
-        _buttonBarDiv4 = selection.append("div")
-            .attr("class", "controls-description")
-            .text("[Drag with mouse to move/rotate; mouse wheel to zoom; right-drag to pan]");
-
-        */
+        
 
         function update_loading_count(){
             //LOADING UPDATE FOR USER
@@ -419,15 +326,7 @@ demo.Treemap3d = function () {
             box.baseScore = d.baseScore;
             box.count = d.count;
             box.critical = d.critical;
-            /*
-            console.log("X:" + newMetrics.x);
-            console.log("Y:" + newMetrics.y);
-            console.log("Z:" + newMetrics.z);
-            console.log("W:" + newMetrics.w);
-            console.log("h:" + newMetrics.h);
-            console.log("d:" + newMetrics.d);
-            */
-        
+
             box.position = { x: newMetrics.x, y: newMetrics.y, z: newMetrics.z }
             //box.scale.x = newMetrics.w
             //box.scale.y = newMetrics.h
@@ -435,31 +334,7 @@ demo.Treemap3d = function () {
             box.scale.y = newMetrics.h;
             box.scale.z = newMetrics.d;
             box.rotation = { x: box.rotation.x, y: box.rotation.y, z: box.rotation.z }
-            /*
-            var coords = new TWEEN.Tween(box.position)
-                .to({ x: newMetrics.x, y: newMetrics.y, z: newMetrics.z }, animationDuration)
-                //.easing(TWEEN.Easing.Sinusoidal.InOut)
-                .start();
 
-            var dims = new TWEEN.Tween(box.scale)
-                .to({ x: newMetrics.w, y: newMetrics.h, z: newMetrics.d }, animationDuration)
-                //.easing(TWEEN.Easing.Sinusoidal.InOut)
-                .start();
-
-            var newRot = box.rotation;
-            var rotate = new TWEEN.Tween(box.rotation)
-                .to({ x: newRot.x, y: newRot.y, z: newRot.z }, animationDuration)
-                //.easing(TWEEN.Easing.Sinusoidal.InOut)
-                .start();
-
-            var update = new TWEEN.Tween(this)
-                .to({}, animationDuration)
-                .onUpdate(_.bind(render, this))
-                .start();
-            */
-
-   
-            
            need_update_render = true;
         }
 
@@ -496,7 +371,7 @@ demo.Treemap3d = function () {
                     // Store new one
                     INTERSECTED = intersects[0].object
                     INTERSECTED.currentHex = INTERSECTED.material.color.getHex()
-                    intersects[0].object.material.color.setHex(0xffff00);
+                    intersects[0].object.material.color.setHex(0x002366);
 
                     // mark for render update
                     needs_render_update = true;

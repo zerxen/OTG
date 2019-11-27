@@ -602,6 +602,9 @@ demo.Treemap3d = function () {
         var directionalLight = new THREE.DirectionalLight(0xFFFFFF, 1.0);
         directionalLight.position.set(-1000, -2000, 4000);
         _scene.add(directionalLight);
+        var directionalLight2 = new THREE.DirectionalLight(0xFFFFFF, 1.0);
+        directionalLight2.position.set(1000, 2000, -4000);
+        _scene.add(directionalLight2);        
 
         // add subtle ambient lighting
         var ambientLight = new THREE.AmbientLight(0x313131);
