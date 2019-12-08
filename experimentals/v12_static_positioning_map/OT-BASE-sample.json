@@ -1,0 +1,635 @@
+{
+	"devices": [
+		{
+			"deviceId": "FR.PLC1",
+			"name": "K.541.AS1.0",
+			"description": "Underbody station",
+			"installationDate": "2015-12-08",
+			"stage": "Operational",
+			"serialNumber": "8823-9158-997",
+			"baseline": "Siemens Simatic S7-400 std configuration",
+			"zone": "Level 1",
+			"safety": "",
+			"release": "",
+			"hardware": {
+				"vendor": "Siemens",
+				"vendorLink": "https://mall.industry.siemens.com/mall/de/WW/Catalog/Products/10231607",
+				"model": "Simatic S7-400",
+				"type": "PLC",
+				"version": "410-5H",
+				"orderNumber": "6ES7 410-5HX08-0AB0",
+				"description": "Programmable logic controller (redundant)",
+				"endOfLife": "",
+				"safety": "",
+				"lifecycle": ""
+			},
+			"context": {
+				"location": "North America / USA / Flat Rock Plant / Body in white / Cabinet C",
+				"locationId": "",
+				"otSystem": "Underbody section DCS",
+				"deviceGroup": "OT / Siemens / PCS7 / Automation Systems",
+				"processes": [
+					{
+						"name": "Car manufacturing / Body in white",
+						"location": "North America / USA / Flat Rock Plant / Body in white / Underbody section",
+						"locationId": ""
+					}
+				]
+			}
+		},
+		{
+			"deviceId": "K.301.AA",
+			"name": "K.301.AA",
+			"description": "",
+			"installationDate": "",
+			"stage": "Operational",
+			"serialNumber": "",
+			"baseline": "",
+			"zone": "Level 1",
+			"safety": "",
+			"release": "",
+			"hardware": {
+				"vendor": "Siemens",
+				"vendorLink": "https://mall.industry.siemens.com/mall/en/ww/Catalog/Product/6ES7151-3AA23-0AB0",
+				"model": "ET200S",
+				"type": "RTU",
+				"version": "IM151-3 PN HF",
+				"orderNumber": "6ES7 151-3AA23-0AB0",
+				"description": "Profinet-Busklemme",
+				"endOfLife": "",
+				"safety": "",
+				"lifecycle": ""
+			},
+			"context": {
+				"location": "North America / USA / Flat Rock Plant / Machine room 16 / Cabinet A",
+				"locationId": "",
+				"otSystem": "",
+				"deviceGroup": "OT / Siemens / PCS7 / Automation Systems",
+				"processes": [
+					{
+						"name": "Car manufacturing / Body in white",
+						"location": "North America / USA / Flat Rock Plant / Body in white",
+						"locationId": ""
+					}
+				]
+			}
+		},
+		{
+			"deviceId": "K.301.AB",
+			"name": "K.301.AB",
+			"description": "",
+			"installationDate": "",
+			"stage": "Operational",
+			"serialNumber": "",
+			"baseline": "",
+			"zone": "Level 1",
+			"safety": "",
+			"release": "",
+			"hardware": {
+				"vendor": "Siemens",
+				"vendorLink": "https://mall.industry.siemens.com/mall/en/ww/Catalog/Product/6ES7151-3AA23-0AB0",
+				"model": "ET200S",
+				"type": "RTU",
+				"version": "IM151-3 PN HF",
+				"orderNumber": "6ES7 151-3AA23-0AB0",
+				"description": "Profinet-Busklemme",
+				"endOfLife": "",
+				"safety": "",
+				"lifecycle": ""
+			},
+			"context": {
+				"location": "North America / USA / Flat Rock Plant / Machine room 16 / Cabinet A",
+				"locationId": "",
+				"otSystem": "",
+				"deviceGroup": "OT / Siemens / PCS7 / Automation Systems",
+				"processes": [
+					{
+						"name": "Car manufacturing / Body in white",
+						"location": "North America / USA / Flat Rock Plant / Body in white",
+						"locationId": ""
+					}
+				]
+			}
+		},
+		{
+			"deviceId": "K.301.AC",
+			"name": "K.301.AC",
+			"description": "",
+			"installationDate": "",
+			"stage": "Operational",
+			"serialNumber": "",
+			"baseline": "",
+			"zone": "Level 1",
+			"safety": "",
+			"release": "",
+			"hardware": {
+				"vendor": "Siemens",
+				"vendorLink": "https://mall.industry.siemens.com/mall/en/ww/Catalog/Product/6ES7151-3AA23-0AB0",
+				"model": "ET200S",
+				"type": "RTU",
+				"version": "IM151-3 PN HF",
+				"orderNumber": "6ES7 151-3AA23-0AB0",
+				"description": "Profinet-Busklemme",
+				"endOfLife": "",
+				"safety": "",
+				"lifecycle": ""
+			},
+			"context": {
+				"location": "North America / USA / Flat Rock Plant / Machine room 16 / Cabinet A",
+				"locationId": "",
+				"otSystem": "",
+				"deviceGroup": "OT / Siemens / PCS7 / Automation Systems",
+				"processes": [
+					{
+						"name": "Car manufacturing / Body in white",
+						"location": "North America / USA / Flat Rock Plant / Body in white",
+						"locationId": ""
+					}
+				]
+			}
+		},
+		{
+			"deviceId": "K.301.AD",
+			"name": "K.301.AD",
+			"description": "",
+			"installationDate": "",
+			"stage": "Operational",
+			"serialNumber": "",
+			"baseline": "",
+			"zone": "Level 1",
+			"safety": "",
+			"release": "",
+			"hardware": {
+				"vendor": "Siemens",
+				"vendorLink": "https://mall.industry.siemens.com/mall/en/ww/Catalog/Product/6ES7151-3AA23-0AB0",
+				"model": "ET200S",
+				"type": "RTU",
+				"version": "IM151-3 PN HF",
+				"orderNumber": "6ES7 151-3AA23-0AB0",
+				"description": "Profinet-Busklemme",
+				"endOfLife": "",
+				"safety": "",
+				"lifecycle": ""
+			},
+			"context": {
+				"location": "North America / USA / Flat Rock Plant / Machine room 16 / Cabinet A",
+				"locationId": "",
+				"otSystem": "",
+				"deviceGroup": "OT / Siemens / PCS7 / Automation Systems",
+				"processes": [
+					{
+						"name": "Car manufacturing / Body in white",
+						"location": "North America / USA / Flat Rock Plant / Body in white",
+						"locationId": ""
+					}
+				]
+			}
+		},
+		{
+			"deviceId": "K.301.AE",
+			"name": "K.301.AE",
+			"description": "",
+			"installationDate": "",
+			"stage": "Operational",
+			"serialNumber": "",
+			"baseline": "",
+			"zone": "Level 1",
+			"safety": "",
+			"release": "",
+			"hardware": {
+				"vendor": "Siemens",
+				"vendorLink": "https://mall.industry.siemens.com/mall/en/ww/Catalog/Product/6ES7151-3AA23-0AB0",
+				"model": "ET200S",
+				"type": "RTU",
+				"version": "IM151-3 PN HF",
+				"orderNumber": "6ES7 151-3AA23-0AB0",
+				"description": "Profinet-Busklemme",
+				"endOfLife": "",
+				"safety": "",
+				"lifecycle": ""
+			},
+			"context": {
+				"location": "North America / USA / Flat Rock Plant / Machine room 16 / Cabinet A",
+				"locationId": "",
+				"otSystem": "",
+				"deviceGroup": "OT / Siemens / PCS7 / Automation Systems",
+				"processes": [
+					{
+						"name": "Car manufacturing / Body in white",
+						"location": "North America / USA / Flat Rock Plant / Body in white",
+						"locationId": ""
+					}
+				]
+			}
+		},
+		{
+			"deviceId": "K.301.AF",
+			"name": "K.301.AF",
+			"description": "",
+			"installationDate": "",
+			"stage": "Operational",
+			"serialNumber": "",
+			"baseline": "",
+			"zone": "Level 1",
+			"safety": "",
+			"release": "",
+			"hardware": {
+				"vendor": "Siemens",
+				"vendorLink": "https://mall.industry.siemens.com/mall/en/ww/Catalog/Product/6ES7151-3AA23-0AB0",
+				"model": "ET200S",
+				"type": "RTU",
+				"version": "IM151-3 PN HF",
+				"orderNumber": "6ES7 151-3AA23-0AB0",
+				"description": "Profinet-Busklemme",
+				"endOfLife": "",
+				"safety": "",
+				"lifecycle": ""
+			},
+			"context": {
+				"location": "North America / USA / Flat Rock Plant / Machine room 16 / Cabinet A",
+				"locationId": "",
+				"otSystem": "",
+				"deviceGroup": "OT / Siemens / PCS7 / Automation Systems",
+				"processes": [
+					{
+						"name": "Car manufacturing / Body in white",
+						"location": "North America / USA / Flat Rock Plant / Body in white",
+						"locationId": ""
+					}
+				]
+			}
+		},
+		{
+			"deviceId": "K.541.PR1",
+			"name": "K.541.PR1",
+			"description": "",
+			"installationDate": "",
+			"stage": "Operational",
+			"serialNumber": "",
+			"baseline": "",
+			"zone": "Level 2",
+			"safety": "",
+			"release": "",
+			"hardware": {
+				"vendor": "Hewlett-Packard",
+				"vendorLink": "",
+				"model": "Laserjet",
+				"type": "Printer",
+				"version": "",
+				"orderNumber": "",
+				"description": "",
+				"endOfLife": "",
+				"safety": "",
+				"lifecycle": ""
+			},
+			"context": {
+				"location": "North America / USA / Flat Rock Plant / Electrical workshop / Server room 1",
+				"locationId": "",
+				"otSystem": "",
+				"deviceGroup": "OT / Siemens / PCS7 / Operator Terminals",
+				"processes": [
+					{
+						"name": "Car manufacturing / Body in white",
+						"location": "North America / USA / Flat Rock Plant / Body in white",
+						"locationId": ""
+					}
+				]
+			}
+		},
+		{
+			"deviceId": "K.541.PR2",
+			"name": "K.541.PR2",
+			"description": "",
+			"installationDate": "",
+			"stage": "Operational",
+			"serialNumber": "",
+			"baseline": "",
+			"zone": "Level 2",
+			"safety": "",
+			"release": "",
+			"hardware": {
+				"vendor": "Hewlett-Packard",
+				"vendorLink": "",
+				"model": "Laserjet",
+				"type": "Printer",
+				"version": "",
+				"orderNumber": "",
+				"description": "",
+				"endOfLife": "",
+				"safety": "",
+				"lifecycle": ""
+			},
+			"context": {
+				"location": "North America / USA / Flat Rock Plant / Electrical workshop / Server room 2",
+				"locationId": "",
+				"otSystem": "",
+				"deviceGroup": "OT / Siemens / PCS7 / Engineering",
+				"processes": [
+					{
+						"name": "Car manufacturing / Body in white",
+						"location": "North America / USA / Flat Rock Plant / Body in white",
+						"locationId": ""
+					}
+				]
+			}
+		},
+		{
+			"deviceId": "K.550.O",
+			"name": "Office PC",
+			"description": "Control Room Office PC",
+			"installationDate": "",
+			"stage": "Operational",
+			"serialNumber": "",
+			"baseline": "Office PC",
+			"zone": "Level 2",
+			"safety": "",
+			"release": "",
+			"hardware": {
+				"vendor": "Dell",
+				"vendorLink": "",
+				"model": "Optiplex 380",
+				"type": "Desktop",
+				"version": "",
+				"orderNumber": "",
+				"description": "",
+				"endOfLife": "",
+				"safety": "",
+				"lifecycle": ""
+			},
+			"context": {
+				"location": "North America / USA / Flat Rock Plant / Body in white / Control room",
+				"locationId": "",
+				"otSystem": "",
+				"deviceGroup": "",
+				"processes": [
+					{
+						"name": "Car manufacturing",
+						"location": "",
+						"locationId": ""
+					}
+				]
+			}
+		},
+		{
+			"deviceId": "K.541.OS9",
+			"name": "Operator Station 9",
+			"description": "Inspection station",
+			"installationDate": "",
+			"stage": "Operational",
+			"serialNumber": "",
+			"baseline": "Standard Operator Station",
+			"zone": "Level 2",
+			"safety": "",
+			"release": "",
+			"hardware": {
+				"vendor": "Dell",
+				"vendorLink": "",
+				"model": "Optiplex 380",
+				"type": "Desktop",
+				"version": "",
+				"orderNumber": "",
+				"description": "",
+				"endOfLife": "",
+				"safety": "",
+				"lifecycle": ""
+			},
+			"context": {
+				"location": "North America / USA / Flat Rock Plant / Body in white / Control room",
+				"locationId": "",
+				"otSystem": "",
+				"deviceGroup": "OT / Siemens / PCS7 / Operator Terminals",
+				"processes": [
+					{
+						"name": "Car manufacturing / Body in white",
+						"location": "North America / USA / Flat Rock Plant / Body in white",
+						"locationId": ""
+					}
+				]
+			}
+		},
+		{
+			"deviceId": "K.541.U11",
+			"hardware": {
+				"type": "unknown"
+			}
+		},
+		{
+			"deviceId": "K.541.U71",
+			"hardware": {
+				"type": "unknown"
+			}
+		},
+		{
+			"deviceId": "xzy.PLC340",
+			"hardware": {
+				"type": "unknown"
+			}
+		},
+		{
+			"deviceId": "xzy.PLC335",
+			"hardware": {
+				"type": "unknown"
+			}
+		},
+		{
+			"deviceId": "K.541.U04",
+			"hardware": {
+				"type": "unknown"
+			}
+		},
+		{
+			"deviceId": "K.541.U01",
+			"hardware": {
+				"type": "unknown"
+			}
+		},
+		{
+			"deviceId": "K.541.U02",
+			"hardware": {
+				"type": "unknown"
+			}
+		},
+		{
+			"deviceId": "xzy.L2-Switch369",
+			"hardware": {
+				"type": "unknown"
+			}
+		},
+		{
+			"deviceId": "xzy.L2-Switch364",
+			"hardware": {
+				"type": "unknown"
+			}
+		}
+	],
+	"links": [
+		{
+			"source": "FR.PLC1",
+			"target": "K.541.U11"
+		},
+		{
+			"source": "FR.PLC1",
+			"target": "K.541.U71"
+		},
+		{
+			"source": "FR.PLC1",
+			"target": "K.301.AA"
+		},
+		{
+			"source": "FR.PLC1",
+			"target": "K.301.AA"
+		},
+		{
+			"source": "K.301.AA",
+			"target": "K.301.AB"
+		},
+		{
+			"source": "K.301.AA",
+			"target": "FR.PLC1"
+		},
+		{
+			"source": "K.301.AA",
+			"target": "K.301.AB"
+		},
+		{
+			"source": "K.301.AB",
+			"target": "xzy.PLC340"
+		},
+		{
+			"source": "K.301.AB",
+			"target": "xzy.PLC340"
+		},
+		{
+			"source": "K.301.AB",
+			"target": "xzy.PLC335"
+		},
+		{
+			"source": "K.301.AB",
+			"target": "xzy.PLC335"
+		},
+		{
+			"source": "K.301.AB",
+			"target": "K.301.AC"
+		},
+		{
+			"source": "K.301.AB",
+			"target": "K.301.AA"
+		},
+		{
+			"source": "K.301.AB",
+			"target": "K.301.AC"
+		},
+		{
+			"source": "K.301.AC",
+			"target": "xzy.PLC340"
+		},
+		{
+			"source": "K.301.AC",
+			"target": "xzy.PLC340"
+		},
+		{
+			"source": "K.301.AC",
+			"target": "xzy.PLC335"
+		},
+		{
+			"source": "K.301.AC",
+			"target": "xzy.PLC335"
+		},
+		{
+			"source": "K.301.AC",
+			"target": "K.301.AB"
+		},
+		{
+			"source": "K.301.AC",
+			"target": "K.301.AD"
+		},
+		{
+			"source": "K.301.AC",
+			"target": "K.301.AD"
+		},
+		{
+			"source": "K.301.AD",
+			"target": "xzy.PLC340"
+		},
+		{
+			"source": "K.301.AD",
+			"target": "xzy.PLC340"
+		},
+		{
+			"source": "K.301.AD",
+			"target": "xzy.PLC335"
+		},
+		{
+			"source": "K.301.AD",
+			"target": "xzy.PLC335"
+		},
+		{
+			"source": "K.301.AD",
+			"target": "K.301.AE"
+		},
+		{
+			"source": "K.301.AD",
+			"target": "K.301.AC"
+		},
+		{
+			"source": "K.301.AD",
+			"target": "K.301.AE"
+		},
+		{
+			"source": "K.301.AE",
+			"target": "xzy.PLC340"
+		},
+		{
+			"source": "K.301.AE",
+			"target": "xzy.PLC340"
+		},
+		{
+			"source": "K.301.AE",
+			"target": "xzy.PLC335"
+		},
+		{
+			"source": "K.301.AE",
+			"target": "xzy.PLC335"
+		},
+		{
+			"source": "K.301.AE",
+			"target": "K.301.AD"
+		},
+		{
+			"source": "K.301.AE",
+			"target": "K.301.AF"
+		},
+		{
+			"source": "K.301.AE",
+			"target": "K.301.AF"
+		},
+		{
+			"source": "K.301.AF",
+			"target": "K.301.AE"
+		},
+		{
+			"source": "K.541.OS9",
+			"target": "K.541.U04"
+		},
+		{
+			"source": "K.541.PR1",
+			"target": "K.541.U01"
+		},
+		{
+			"source": "K.541.PR2",
+			"target": "K.541.U02"
+		},
+		{
+			"source": "K.541.PR2",
+			"target": "xzy.L2-Switch369"
+		},
+		{
+			"source": "K.541.PR2",
+			"target": "xzy.L2-Switch364"
+		},
+		{
+			"source": "K.550.O",
+			"target": "K.541.U04"
+		}
+	]
+}
